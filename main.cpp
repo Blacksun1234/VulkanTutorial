@@ -31,6 +31,23 @@ private:
         window = glfwCreateWindow(WIDTH, HEIGHT, "Vulkan Tutorial", nullptr, nullptr);
     }
 
+    //Check if all extensions returned by glfwGetRequiredInstanceExtensions are in the supported list
+    void glfwIncludedExtention(const char ** glfwExtentions, uint32_t glfwExtensionCount, std::vector<VkExtensionProperties> extensions) {
+        std::cout << "available extensions:\n";
+
+        for (const auto& extension : extensions) {
+            std::string extensionName = extension.extensionName;
+            std::string glfwExtension = *glfwExtentions;
+
+            if (extensionName.compare(glfwExtension) == 0) {
+                std::cout << "extension: " << *glfwExtentions << " compatible\n";
+            }
+        }
+        std::cout << "\n";
+        std::cout << "available glfw extensions:\n";
+        std::cout << *glfwExtentions << std::endl;
+    }
+
     void createInstance() {
         VkApplicationInfo appInfo{};
         appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
@@ -53,11 +70,14 @@ private:
         for (const auto& extension : extensions) {
             std::cout << '\t' << extension.extensionName << '\n';
         }
-
+        std::cout << "\n";
 
         uint32_t glfwExtensionCount = 0;
         const char** glfwExtensions;
         glfwExtensions = glfwGetRequiredInstanceExtensions(&glfwExtensionCount);
+
+        //check
+        glfwIncludedExtention(glfwExtensions, glfwExtensionCount, extensions);
 
         createInfo.enabledExtensionCount = glfwExtensionCount;
         createInfo.ppEnabledExtensionNames = glfwExtensions;

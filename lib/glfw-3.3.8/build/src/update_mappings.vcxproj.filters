@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\build\CMakeFiles\ddee90c824260c073800e0f158458059\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\CMake\GenerateMappings.cmake" />
+    <None Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{232B2A70-0F6B-3201-9368-DF0098E24B12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F05B83F7-A54B-3303-A2D1-9C0276618C5D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

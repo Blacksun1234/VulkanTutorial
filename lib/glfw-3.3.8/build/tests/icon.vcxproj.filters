@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\tests\icon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\deps\glad_gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\deps\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Dev\C++\C++ projects\VulkanProjects\VulkanDependencies\glfw-3.3.8\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F05B83F7-A54B-3303-A2D1-9C0276618C5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{27D98244-760E-3F92-BCD6-D3B17294DBDE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

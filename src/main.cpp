@@ -835,6 +835,17 @@ private:
     }
 
     bool isDeviceSuitable(VkPhysicalDevice device) {
+
+        VkPhysicalDeviceProperties deviceProperties;
+        VkPhysicalDeviceFeatures deviceFeatures;
+        vkGetPhysicalDeviceProperties(device, &deviceProperties);
+        vkGetPhysicalDeviceFeatures(device, &deviceFeatures);
+        
+        std::cout << "---------------------------------------------------------" << std::endl;
+        std::cout << "device name: " << deviceProperties.deviceName << std::endl;
+        std::cout << "device type: " << deviceProperties.deviceType << std::endl;
+        std::cout << "---------------------------------------------------------" << std::endl;
+
         QueueFamilyIndices indices = findQueueFamilies(device);
 
         bool extensionsSupported = checkDeviceExtensionSupport(device);
@@ -972,4 +983,3 @@ int main() {
 
     return EXIT_SUCCESS;
 }
-toto
